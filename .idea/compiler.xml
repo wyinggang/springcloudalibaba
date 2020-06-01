@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloudalibaba-provider-payment9003" />
+        <module name="cloudalibaba-provider-payment9002" />
+        <module name="cloudalibaba-provider-payment9001" />
+        <module name="cloudalibaba-consumer-nacos-order84" />
+        <module name="cloudalibaba-seata-order-service2001" />
+        <module name="cloudalibaba-nacos-config-client3377" />
+        <module name="cloudalibaba-seata-order-service2003" />
+        <module name="cloudalibaba-seata-order-service2002" />
+        <module name="cloudalibaba-nacos-consumer83" />
+        <module name="cloudalibaba-sentinel-service8401" />
+        <module name="cloudalibaba-provider-payment9004" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
