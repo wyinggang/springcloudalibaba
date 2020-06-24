@@ -43,6 +43,19 @@ public class DataSourceProxyConfig {
         return sqlSessionFactoryBean.getObject();
     }
 
+
+    /**
+     * MP 自带分页插件: 使用代理数据源时，mybatis plus分页插件失效，需要再注入一个
+     * @return
+     */
+
+//    @Bean
+//    public PaginationInterceptor paginationInterceptor() {
+//        PaginationInterceptor page = new PaginationInterceptor();
+//        page.setDialectType("mysql");
+//        return page;
+//    }
+
 }
 
 

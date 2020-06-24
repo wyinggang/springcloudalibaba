@@ -22,6 +22,9 @@ public class PaymentController {
 
     @GetMapping(value = "/paymentSQL/{id}")
     public String paymentSQL(@PathVariable("id") Long id) {
+        if (id == 4) {
+            throw new IllegalArgumentException("IllegalArgumentException,非法参数异常....");
+        }
         String payment = hashMap.get(id);
         return serverPort+"--->"+payment;
     }

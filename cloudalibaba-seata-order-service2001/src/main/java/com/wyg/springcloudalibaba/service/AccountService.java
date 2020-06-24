@@ -1,6 +1,7 @@
 package com.wyg.springcloudalibaba.service;
 
 import com.wyg.springcloudalibaba.domain.CommonResult;
+import com.wyg.springcloudalibaba.service.impl.AccountServiceImpl;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;

@@ -20,7 +20,14 @@ spring:
 
 feign:
   hystrix:
-    enabled: false
+    enabled: true
+
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false  #关闭 /开启hystrix超时
 
 
 ribbon:

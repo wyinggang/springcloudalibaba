@@ -8,6 +8,8 @@ import com.wyg.springcloudalibaba.service.StorageService;
 import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import javax.annotation.Resource;
 
     @Service
@@ -26,6 +28,7 @@ import javax.annotation.Resource;
 
         @Override
         @GlobalTransactional(name = "fsp-create-order",rollbackFor = Exception.class)
+        @Transactional
         public void create(Order order){
             log.info("----->开始新建订单");
             //新建订单
@@ -50,4 +53,6 @@ import javax.annotation.Resource;
             log.info("----->下订单结束了");
 
         }
+
+
     }

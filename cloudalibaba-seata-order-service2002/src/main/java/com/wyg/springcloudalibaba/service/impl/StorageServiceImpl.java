@@ -5,6 +5,8 @@ import com.wyg.springcloudalibaba.service.StorageService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import javax.annotation.Resource;
 
 @Service
@@ -17,6 +19,7 @@ public class StorageServiceImpl implements StorageService {
 
     // 扣减库存
     @Override
+    @Transactional
     public void decrease(Long productId, Integer count) {
         LOGGER.info("------->storage-service中扣减库存开始");
         storageDao.decrease(productId,count);
